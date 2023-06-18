@@ -19,7 +19,7 @@ const Navbar = () => {
                             return { backgroundColor: isActive ? '#6d1b7b' : '' }
                         }} sx={{ color: 'white', textTransform:'none'}}>Contact</Button>
 
-                        <Button component={NavLink} to='/loginreg' style={({ isActive }) => {
+                        <Button component={NavLink} to='/login' style={({ isActive }) => {
                             return { backgroundColor: isActive ? '#6d1b7b' : '' }
                         }} sx={{ color: 'white', textTransform:'none'}}>Login/Registration</Button>
 

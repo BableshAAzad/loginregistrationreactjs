@@ -20,7 +20,7 @@ const UserLogin = () => {
             console.warn(actualData);
             document.getElementById('login-form').reset();
             setError({ status: true, msg: 'Login Success', type: 'success' });
-            navigate('/');
+            navigate('/dashboard');
         } else {
             setError({ status: true, msg: 'All Fields are Required', type: 'error' })
         }
@@ -33,7 +33,7 @@ const UserLogin = () => {
                 <Box textAlign='center'>
                     <Button type='submit' variant='contained' sx={{ mt: 3, mb: 2, px: 5 }}>Login</Button>
                 </Box>
-                <NavLink to='/'>Forgot Password ?</NavLink>
+                <NavLink to='/sendpasswordresetemail'>Forgot Password ?</NavLink>
                 {error.status ? <Alert severity={error.type} sx={{mt:1}}>{error.msg}</Alert> : ''}
             </Box>
         </>
