@@ -6,6 +6,7 @@ import LoginReg from "./components/auth/LoginReg";
 import SendPasswordResetEmail from "./components/auth/SendPasswordResetEmail";
 import ResetPassword from "./components/auth/ResetPassword";
 import Dashboard from "./components/pages/Dashboard";
+import YoutubeData from "./components/YoutubeData";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
              <Route path="sendpasswordresetemail" element={<SendPasswordResetEmail/>}></Route>
              <Route path='reset' element={<ResetPassword/>}></Route>
           </Route>
+          <Route path='/youtubeData' element={<YoutubeData></YoutubeData>}></Route>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="*" element={<h1>Error 404 Page Not Found!!!</h1>}></Route>
         </Routes>
