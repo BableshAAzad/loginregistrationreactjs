@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 const Home = () => {
   return (
     <>
-      <Grid containet justifyContent='center'>
+      <Grid containet="true" justifyContent='center'>
         <Grid item sm={10}>
           <h1>Home Page</h1>
           <hr />
